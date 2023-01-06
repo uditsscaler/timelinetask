@@ -17,23 +17,26 @@ body{
     align-items: center;
     justify-items: center;
 }
-h2{
+.h2{
     position: absolute;
     color: azure;
-    margin: auto;
-    left: 47%;
-    top: 10px;
     font-family: 'Courier New';
     font-size: 200%;
 }
 
-.container{
+.nav__h2{
+    margin: auto;
+    left: 47%;
+    top: 10px;
+}
+
+.cnt{
     position:relative;
     width:100%;
     display:flex;
 }
 
-.timeline-event{
+.cnt__ul{
     left: 950px;
     display:inline-block;
     position: relative;
@@ -41,8 +44,17 @@ h2{
 
 }
 
+.li{
+    list-style: none;
+    margin:auto;
+    margin-left:200px;
+    min-height:50px;
+    padding:0 0 50px 30px;
+    position:relative;
+    border-left:3px solid #A37B7B;
+}
 
-.container ul.timeline-event li::before{
+.li::before{
     width: 28px;
     left: -18px;
     top: -5px;
@@ -52,31 +64,16 @@ h2{
     border-radius: 350%;
     content: " ";
     background: #7ba3a3;
-
-
 }
 
-.container ul.timeline-event li:hover::before{
+.li:hover::before{
     background: #bce7e7;
-
 }
 
-.container ul.timeline-event li{
-    list-style: none;
-    margin:auto;
-    margin-left:200px;
-    min-height:50px;
-    padding:0 0 50px 30px;
-    position:relative;
-    border-left:3px solid #A37B7B;
-
-}
-
-
-.l1, .l4, .l5 {
+.ul__l1, .ul__l4, .ul__l5 {
     padding:0 0 30px 30px !important;
 }
-.l2, .l6, .l7{
+.ul__l2, .ul__l6, .ul__l7{
     padding:0 0 60px 30px !important;
 }
 
@@ -95,20 +92,16 @@ h2{
   
 
 
-  .left-text{
+  .left-text, .right-text{
     color: #534b4b;
-    position: absolute;
-  width:500px;
-    left: -135%;
-    text-align: right;
     font-size: 16px;
     font-weight: bold;
 }
 
-.right-text{
-    color: #534b4b;
-    font-weight: bold;
-    font-size: 16px;
-
+.li__left-text{
+    position: absolute;
+    width:500px;
+    left: -135%;
+    text-align: right;
 }
 
